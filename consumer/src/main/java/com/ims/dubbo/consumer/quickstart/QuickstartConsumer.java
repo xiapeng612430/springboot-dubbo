@@ -11,7 +11,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class QuickstartConsumer {
 
-    @Reference(url = "dubbo://localhost:20880")
+    //直连
+    // @Reference(url = "dubbo://localhost:20880")
+
+    @Reference
     ServiceApi serviceApi;
 
     public void sendMessage(String msg) {
