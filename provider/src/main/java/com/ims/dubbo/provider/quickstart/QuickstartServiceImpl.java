@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * on 2019-08-20 23:51
  */
 @Component
-@Service
+@Service(interfaceClass = ServiceApi.class)
 public class QuickstartServiceImpl implements ServiceApi {
 
     @Override
